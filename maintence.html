@@ -1,1 +1,308 @@
-c
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fardang Jhasa Hosting - Maintenance</title>
+  <meta name="description" content="Fardang Jhasa Hosting sedang dalam pemeliharaan. Kami akan segera kembali dengan layanan hosting yang lebih baik.">
+  <meta name="keywords" content="web hosting, hosting murah, domain murah, server Indonesia, VPS murah, cloud hosting, shared hosting, WordPress hosting, hosting terbaik, jasa hosting, beli domain, registrasi domain, SSL gratis, cPanel hosting, email hosting, hosting untuk UMKM, toko online, website perusahaan, jasa buat website, maintenance hosting, perbaikan server, upgrade sistem">
+  <meta name="author" content="Fardang Jhasa Hosting">
+
+  <!-- Favicon -->
+  <link href="Logo.jpg" rel="icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --secondary-color: #6c757d;
+      --success-color: #198754;
+      --warning-color: #ffc107;
+      --light-color: #f8f9fa;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    
+    .maintenance-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+    
+    .maintenance-icon {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+      color: var(--warning-color);
+    }
+    
+    .maintenance-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    
+    .maintenance-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    
+    .progress {
+      height: 10px;
+      margin: 2rem 0;
+    }
+    
+    .contact-info {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .social-links {
+      margin-top: 2rem;
+    }
+    
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: white;
+      transition: transform 0.3s;
+    }
+    
+    .social-links a:hover {
+      transform: translateY(-5px);
+      color: var(--warning-color);
+    }
+    
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    
+    .countdown-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 1rem;
+      min-width: 80px;
+    }
+    
+    .countdown-value {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    
+    .countdown-label {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+    
+    .btn-maintenance {
+      background: var(--warning-color);
+      border: none;
+      color: #000;
+      font-weight: 500;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      transition: all 0.3s;
+    }
+    
+    .btn-maintenance:hover {
+      background: #e0a800;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .feature-item {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+    
+    .feature-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--warning-color);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="maintenance-container">
+      <!-- Logo -->
+      <div class="logo">
+        <i class="bi bi-hdd-stack me-2"></i>Fardang Jhasa Hosting
+      </div>
+      
+      <!-- Maintenance Icon -->
+      <div class="maintenance-icon">
+        <i class="bi bi-tools"></i>
+      </div>
+      
+      <!-- Title -->
+      <h1 class="maintenance-title">Sedang Dalam Pemeliharaan</h1>
+      
+      <!-- Subtitle -->
+      <p class="maintenance-subtitle">
+        Kami sedang melakukan peningkatan sistem untuk memberikan pengalaman yang lebih baik. 
+        Mohon maaf atas ketidaknyamanannya.
+      </p>
+      
+      <!-- Progress Bar -->
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" 
+             role="progressbar" style="width: 75%" 
+             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      
+      <!-- Countdown -->
+      <div class="countdown">
+        <div class="countdown-item">
+          <div class="countdown-value" id="days">00</div>
+          <div class="countdown-label">Hari</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="hours">00</div>
+          <div class="countdown-label">Jam</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="minutes">00</div>
+          <div class="countdown-label">Menit</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="seconds">00</div>
+          <div class="countdown-label">Detik</div>
+        </div>
+      </div>
+      
+      <!-- Features -->
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+            <h5>Performa Lebih Cepat</h5>
+            <p>Meningkatkan kecepatan server untuk pengalaman terbaik</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h5>Keamanan Ditingkatkan</h5>
+            <p>Perlindungan terbaru untuk data Anda</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h5>Fitur Baru</h5>
+            <p>Menambahkan fitur-fitur yang diminta pelanggan</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h4 class="mb-3">Butuh Bantuan Darurat?</h4>
+        <p>Tim support kami tetap siap membantu selama pemeliharaan berlangsung</p>
+        <a href="https://wa.me/6285843712471" target="_blank" class="btn btn-maintenance">
+          <i class="bi bi-whatsapp me-2"></i>Hubungi WhatsApp
+        </a>
+      </div>
+      
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" title="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="mt-4">
+        <p>&copy; 2023 Fardang Jhasa Hosting. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Countdown Script -->
+  <script>
+    // Set tanggal target (3 hari dari sekarang)
+    const countdownDate = new Date();
+    countdownDate.setDate(countdownDate.getDate() + 3);
+    
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+      
+      // Perhitungan waktu
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+      // Tampilkan hasil
+      document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+      document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+      
+      // Jika hitungan mundur selesai
+      if (distance < 0) {
+        clearInterval(countdownTimer);
+        document.querySelector(".countdown").innerHTML = "<h4>Pemeliharaan Selesai!</h4>";
+      }
+    }
+    
+    // Perbarui setiap 1 detik
+    const countdownTimer = setInterval(updateCountdown, 1000);
+    
+    // Panggil sekali untuk menghindari penundaan awal
+    updateCountdown();
+  </script>
+</body>
+
+</html>
